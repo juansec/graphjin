@@ -111,7 +111,7 @@ CREATE TABLE products (
 
     -- tsvector column needed for full-text search
     tsv tsvector GENERATED ALWAYS
-      AS (to_tsvector('english', description)) STORED,
+      AS (to_tsvector('english', description)) STORED
 );
 
 -- Indices -------------------------------------------------------
